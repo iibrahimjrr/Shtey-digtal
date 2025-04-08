@@ -1,50 +1,53 @@
 <?php
 
 use App\Http\Controllers\AuthController;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ChatbotageController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\PageController;
+use Illuminate\Support\Facades\Route;
 
-Route::get('/patient', [UserController::class, 'index']);   // عرض جميع المستخدمين
-Route::post('/patient', [UserController::class, 'store']);  // إنشاء مستخدم جديد
-Route::get('/patient/{id}', [UserController::class, 'show']);  // عرض مستخدم معين
-Route::put('/patient/{id}', [UserController::class, 'update']); // تحديث المستخدم
-Route::delete('/patient/{id}', [UserController::class, 'destroy']); // حذف المستخدم
+//  Users 
+Route::get('/patient', [UserController::class, 'index']);
+Route::post('/patient', [UserController::class, 'store']);
+Route::get('/patient/{id}', [UserController::class, 'show']);
+Route::put('/patient/{id}', [UserController::class, 'update']);
+Route::delete('/patient/{id}', [UserController::class, 'destroy']);
 
-Route::get('/articles', [ArticleController::class, 'index']);  // عرض المقالات
-Route::get('/article', [ArticleController::class, 'show']);   // عرض المقال
+//  Articles 
+Route::get('/articles', [ArticleController::class, 'index']);
+Route::get('/articles/{id}', [ArticleController::class, 'show']);
 
-Route::middleware(['auth:sanctum'])->group(function () {
-    Route::post('/comments', [CommentController::class, 'store']);  // إضافة تعليق
-    Route::delete('/comments/{id}', [CommentController::class, 'destroy']); // حذف تعليق
-    
-    Route::middleware('admin')->group(function () {
-        Route::put('/article', [ArticleController::class, 'update']);  // تحديث المقال
-        Route::put('/pages/{id}', [PageController::class, 'update']); // تعديل صفحة
-    });
-});
+// Comments 
+Route::get('/comments', [CommentController::class, 'index']);
 
-Route::get('/comments', [CommentController::class, 'index']);   // عرض كل التعليقات
+//  Pages 
+Route::get('/pages', [PageController::class, 'index']);
+Route::get('/pages/{id}', [PageController::class, 'show']);
 
-Route::get('/pages', [PageController::class, 'index']);   // عرض جميع الصفحات
-Route::get('/pages/{id}', [PageController::class, 'show']);  // عرض صفحة معينة
+//  Chatbot 
+Route::get('/chatbot', [ChatbotageController::class, 'index']);
+Route::post('/chatbot', [ChatbotageController::class, 'store']);
 
-Route::get('/chatbot', [ChatbotageController::class, 'index']);   // عرض الرسائل
-Route::post('/chatbot', [ChatbotageController::class, 'store']);  // إرسال رسالة للشات بوت
-
-// تسجيل الدخول والتسجيل والخروج
-Route::middleware(['throttle:10,1'])->groub(function(){
-Route::post('/register', [AuthController::class, 'register']);
-Route::post('/login', [AuthController::class, 'login']);
+//  Auth Routes 
+Route::middleware(['throttle:10,1'])->group(function () {
+    Route::post('/register', [AuthController::class, 'register']);
+    Route::post('/login', [AuthController::class, 'login']);
 });
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
 
-Route::middleware(['cors'])->group(function () {
-    Route::get('/test', function () {
-        return response()->json(['message' => 'CORS enabled!']);
-    });
+//  Protected Routes with Policies 
+Route::middleware(['auth:sanctum'])->group(function () {
+    Route::post('/comments', [CommentController::class, 'store'])
+        ->middleware('can:create,App\Models\Comment');
+
+    Route::delete('/comments/{comment}', [CommentController::class, 'destroy'])
+        ->middleware('can:delete,comment');
+
+    Route::put('/pages/{page}', [PageController::class, 'update'])
+        ->middleware('can:update,page');
+
+    Route::put('/articles/{article}', [ArticleController::class, 'update'])
+        ->middleware('can:update,article');
 });
