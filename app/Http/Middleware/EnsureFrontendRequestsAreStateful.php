@@ -13,6 +13,6 @@ class EnsureFrontendRequestsAreStateful
             return $next($request);
         }
 
-        abort(403, 'Unauthorized request');
+        abort(403, 'لاؤة');
     }
 }
