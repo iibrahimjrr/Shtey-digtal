@@ -19,7 +19,7 @@ class ChatbotageController extends Controller
             'user_id'  =>  'required|exists:users,id'
         ]);
 
-        $response = "اجابه افتراضيه";
+        $response = 'عايز ايه اؤمرني';
         $chatbotMessage = Chatbot::create([
             'user_id' => $request->user_id,
             'message' => $request->message,

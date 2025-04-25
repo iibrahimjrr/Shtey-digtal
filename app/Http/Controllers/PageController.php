@@ -27,6 +27,6 @@ class PageController extends Controller
     public function destroy($id)
     {
         Page::findOrFail($id)->delete();
-        return response()->json(['message' => 'الصفحه اتمسحت يا قلب اخوك']);
+        return response()->json(['message' => 'الصفحه اتمسحت ']);
     }
 }

@@ -16,7 +16,7 @@ class AuthController extends Controller
             'name'     => 'required|string|max:50',
             'username' => 'required|string|max:50|unique:users',
             'email'    => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:10',
+            'password' => 'required|string|min:8',
             'age'      => 'nullable|integer|max=2',
             'role'     => 'nullable|in:admin,user'
         ]);
@@ -33,7 +33,7 @@ class AuthController extends Controller
         $token = $user->createToken('auth_token')->plainTextToken;
     
         return response()->json([
-            'message' => 'الاكونت اتعمل ي قلبي',
+            'message' => 'الاكونت اتعمل ',
             'token'   => $token,
             'user'    => $user,
         ]);

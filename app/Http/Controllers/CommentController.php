@@ -16,8 +16,8 @@ class CommentController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'comment'    => 'required',
-            'user_id'    => 'required|exists:users,id',
+            'comment'  => 'required',
+            'user_id'  => 'required|exists:users,id',
         ]);
 
 
@@ -28,6 +28,6 @@ class CommentController extends Controller
     public function destroy($id)
     {
         Comment::findOrFail($id)->delete();
-        return response()->json(['Message' => 'التعليق اتسمح يا قلب اخوك']);
+        return response()->json(['Message' => 'التعليق اتسمحك']);
     }
 }    

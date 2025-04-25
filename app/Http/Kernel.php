@@ -25,7 +25,6 @@ class Kernel extends HttpKernel
      */
     protected $middlewareGroups = [
         'web' => [
-            \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
@@ -46,8 +45,6 @@ class Kernel extends HttpKernel
      * @var array<string, string>
      */
     protected $routeMiddleware = [
-        'checkArticleOwner' => \App\Http\Middleware\CheckArticleOwner::class,
-        'auth'              => \App\Http\Middleware\Authenticate::class,
         'admin'             => \App\Http\Middleware\AdminMiddleware::class,
     ];
 }
