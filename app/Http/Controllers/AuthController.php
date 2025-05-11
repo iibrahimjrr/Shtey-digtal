@@ -5,41 +5,38 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
-use App\Models\User;
+use App\Models\Patient;
 
 class AuthController extends Controller
 {
-    
     public function register(Request $request)
     {
         $request->validate([
             'name'     => 'required|string|max:50',
-            'username' => 'required|string|max:50|unique:users',
-            'email'    => 'required|string|email|max:255|unique:users',
+            'username' => 'required|string|max:50|unique:patients',
+            'email'    => 'required|string|email|max:255|unique:patients',
             'password' => 'required|string|min:8',
-            'age'      => 'nullable|integer|max=2',
-            'role'     => 'nullable|in:admin,user'
+            'age'      => 'nullable|integer|max:150',
+            'role'     => 'nullable|in:admin,patient'
         ]);
     
-        $user = User::create([
+        $Patient = Patient::create([
             'name'     => $request->name,
             'username' => $request->username,
             'email'    => $request->email,
             'password' => Hash::make($request->password),
             'age'      => $request->age,
-            'role'     => $request->role ?? 'user', 
+            'role'     => $request->role ?? 'Patient', 
         ]);
     
-        $token = $user->createToken('auth_token')->plainTextToken;
+        $token = $Patient->createToken('auth_token')->plainTextToken;
     
         return response()->json([
             'message' => 'الاكونت اتعمل ',
             'token'   => $token,
-            'user'    => $user,
-        ]);
+            'Patient' => $Patient,
+        ], 201, ['Content-Type' => 'application/json']);
     }
-    
-
     
     public function login(Request $request)
     {
@@ -48,25 +45,26 @@ class AuthController extends Controller
             'password' => 'required|string',
         ]);
 
-        $user = User::where('email', $request->email)->first();
-
-        if (!$user || !Hash::check($request->password, $user->password)) {
+        if (!Auth::attempt($request->only('email', 'password'))) {
             return response()->json(['message' => 'اه يا حرامي حاطط بيانات غلط'], 401);
         }
 
-        $token = $user->createToken('auth_token')->plainTextToken;
+        $Patient = Auth::user();
+        $token = $Patient->createToken('auth_token')->plainTextToken;
 
         return response()->json([
             'message' => 'ادخل يا حبيبي',
             'token'   => $token,
-            'user'    => $user,
-        ]);
+            'Patient' => $Patient,
+        ], 200, ['Content-Type' => 'application/json']);
     }
 
-    
     public function logout(Request $request)
     {
-        $request->user()->tokens()->delete();
-        return response()->json(['message' => 'مع السلامه ابقى تعلا تاني']);
+        $request->user()->tokens()->delete(); 
+
+        return response()->json([
+            'message' => 'مع السلامه يا حبيبي ابقى تعلاا تاني',
+        ], 200, ['Content-Type' => 'application/json']);
     }
 }

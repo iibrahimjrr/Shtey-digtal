@@ -13,7 +13,7 @@ return new class extends Migration
             $table->id();
             $table->text('message');
             $table->text('response');
-            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
+            $table->foreignId('patient_id')->constrained('patients')->onDelete('cascade');
             $table->timestamps();
         });
     }

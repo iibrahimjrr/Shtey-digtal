@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\PatientController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ChatbotageController;
 use App\Http\Controllers\CommentController;
@@ -9,16 +9,16 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Route;
 
-//  Users 
-Route::get('/users', [UserController::class, 'index']);
-Route::post('/users', [UserController::class, 'store']);
-Route::get('/users/{id}', [UserController::class, 'show']);
-Route::put('/users/{id}', [UserController::class, 'update']);
-Route::delete('/users/{id}', [UserController::class, 'destroy']);
+//  patients
+Route::get('/patients', [PatientController::class, 'index']);
+Route::post('/patients', [PatientController::class, 'store']);
+Route::get('/patients/{id}', [PatientController::class, 'show']);
+Route::put('/patients/{id}', [PatientController::class, 'update']);
+Route::delete('/patients/{id}', [PatientController::class, 'destroy']);
 
 //  Articles 
-Route::get('/articles', [ArticleController::class, 'index']);
-Route::get('/articles/{id}', [ArticleController::class, 'show']);
+Route::get('/articles', [ArticleController::class, 'show']);
+Route::get('/articles/{id}', [ArticleController::class, 'update']);
 
 // Comments 
 Route::get('/comments', [CommentController::class, 'index']);
@@ -39,10 +39,10 @@ Route::middleware('auth:sanctum')->group(function () {
 
 //  Auth Routes 
 Route::middleware(['throttle:60,1'])->group(function () {
-    Route::post('/register', [AuthController::class, 'register']);
-    Route::post('/login', [AuthController::class, 'login']);
+    Route::any('/register', [AuthController::class, 'register']);
+    Route::any('/login', [AuthController::class, 'login']);
 });
-Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
+Route::middleware('auth:sanctum')->any('/logout', [AuthController::class, 'logout']);
 
 //  Protected Routes with Policies 
 Route::middleware(['auth:sanctum'])->group(function () {

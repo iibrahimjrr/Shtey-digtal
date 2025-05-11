@@ -2,13 +2,13 @@
 
 namespace App\Policies;
 
-use App\Models\User;
+use App\Models\Patient;
 use App\Models\Article;
 
 class ArticlePolicy
 {
-    public function update(User $user, Article $article)
+    public function update(Patient $Patient, Article $article)
     {
-        return $user->is_admin;
+        return $Patient->is_admin;
     }
 }

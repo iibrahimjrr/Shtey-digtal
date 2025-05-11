@@ -16,12 +16,12 @@ class ChatbotageController extends Controller
     {
         $request->validate([
             'message'  =>  'required|string',
-            'user_id'  =>  'required|exists:users,id'
+            'patient_id'  =>  'required|exists:patients,id'
         ]);
 
         $response = 'عايز ايه اؤمرني';
         $chatbotMessage = Chatbot::create([
-            'user_id' => $request->user_id,
+            'patient_id' => $request->patient_id,
             'message' => $request->message,
             'response' => $response,
         ]);

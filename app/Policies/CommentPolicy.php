@@ -2,18 +2,18 @@
 
 namespace App\Policies;
 
-use App\Models\User;
+use App\Models\Patient;
 use App\Models\Comment;
 
 class CommentPolicy
 {
-    public function delete(User $user, Comment $comment)
+    public function delete(Patient $Patient, Comment $comment)
     {
-        return $user->id === $comment->user_id || $user->is_admin;
+        return $Patient->id === $comment->patient_id || $Patient->is_admin;
     }
 
-    public function create(User $user)
+    public function create(Patient $Patient)
     {
-        return $user !== null;
+        return $Patient !== null;
     }
 }

@@ -1,0 +1,916 @@
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .departments .department-tab .tab-pane .department-left .p1,
+  .section-title h2,
+  .services .single-service h4 {
+    margin-bottom: 12px;
+  }
+  .appointment.single-page,
+  .call-action .content,
+  .fun-facts.section,
+  .section {
+    padding: 70px 0;
+  }
+  .section-title {
+    margin-bottom: 35px;
+    padding: 0 80px;
+  }
+  .section-title h2 {
+    font-size: 25px;
+  }
+  .btn,
+  .section-title p {
+    font-size: 13px;
+  }
+  .btn {
+    padding: 11px 20px;
+    font-weight: 400;
+  }
+  .breadcrumbs {
+    padding: 60px 0;
+  }
+  .breadcrumbs h2 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .breadcrumbs .bread-list {
+    margin-top: 5px;
+  }
+  .breadcrumbs ul li a {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .pagination {
+    margin: 30px 0 0;
+  }
+  #scrollUp {
+    bottom: 55px;
+  }
+  .slider .single-slider {
+    height: 380px;
+    position: relative;
+  }
+  .schedule {
+    background: #fff;
+    margin: 0;
+    padding: 70px 0;
+    height: auto;
+    border-bottom: 1px solid #eee;
+  }
+  .schedule .schedule-inner {
+    transform: none;
+  }
+  .appointment.single-page .work-hour,
+  .departments .department-right,
+  .schedule .single-schedule.last {
+    margin-top: 30px;
+  }
+  .slider .single-slider:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    opacity: 0.5;
+  }
+  .slider .single-slider h1 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 35px;
+  }
+  .slider .single-slider .text,
+  .slider.index2 .single-slider .text {
+    margin-top: 80px;
+  }
+  .slider .owl-carousel .owl-nav div {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+  }
+  .Feautes.index2 {
+    padding-top: 70px;
+  }
+  .Feautes .single-features::before {
+    display: none;
+  }
+  .Feautes .single-features {
+    text-align: center;
+    position: relative;
+    padding: 10px 155px;
+    margin: 10px 0;
+  }
+  .footer .single-footer,
+  .fun-facts .single-fun {
+    margin: 20px 0;
+  }
+  .why-choose .choose-right {
+    height: 350px;
+    margin-top: 30px;
+  }
+  .doctor-details-item .doctor-name .name,
+  .service-details-inner h2,
+  .services-details-img h2 {
+    font-size: 24px;
+  }
+  .service-details-inner-left {
+    height: 400px;
+    margin-bottom: 30px;
+  }
+  .service-details-inner {
+    width: 100%;
+    margin: 0;
+  }
+  .appointment .appointment-image {
+    margin-top: 20px;
+  }
+  .call-action .content h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .blog .single-news,
+  .services .single-service {
+    margin: 15px 0;
+  }
+  .testimonials {
+    padding-bottom: 100px;
+  }
+  .testimonials .owl-dots {
+    transform: translateX(-18%);
+  }
+  .departments .department-tab .nav li {
+    margin-right: 30px;
+  }
+  .departments .department-tab .nav li a {
+    color: #fff;
+    margin-top: 0;
+    padding: 0 3px 12px;
+  }
+  .departments .department-tab .nav li a i {
+    font-size: 38px;
+  }
+  .departments .department-tab .nav li .first {
+    padding-top: 6px;
+    font-size: 14px;
+  }
+  .departments .department-tab .nav li .second {
+    font-size: 13px;
+    font-weight: 400;
+    color: #868686;
+    margin-top: 0;
+  }
+  .departments .department-tab .tab-pane .department-left h3 {
+    font-size: 22px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+  .departments .department-tab .tab-pane .department-left p {
+    margin-bottom: 15px;
+  }
+  .departments .department-right img {
+    height: 100%;
+    width: 100%;
+  }
+  .news-single .single-main {
+    margin-top: 0;
+  }
+  .newsletter .subscribe-text {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .newsletter .subscribe-form {
+    text-align: center;
+  }
+  .about-image,
+  .contact-us #myMap,
+  .login .login-left,
+  .our-mission-image,
+  .register .register-left {
+    height: 400px;
+  }
+  .contact-us .contact-us-form h2 {
+    font-size: 28px;
+  }
+  .contact-us .single-info {
+    margin: 10px 0;
+  }
+  .about-content h2,
+  .our-mission-content h2 {
+    line-height: 32px;
+    font-size: 25px;
+  }
+  .about-content {
+    padding-bottom: 0;
+  }
+  .our-mission-content {
+    margin-left: 50px;
+    padding-top: 0;
+  }
+  .doctor-details-area .doctor-details-right {
+    padding-left: 0;
+    padding-top: 40px;
+  }
+  .doctor-details-item .doctor-name .deg {
+    font-size: 19px;
+    margin: 5px 0;
+  }
+  .doctor-calendar-table table tbody tr td h3,
+  .doctor-calendar-table table tbody tr td span.time,
+  .doctor-calendar-table table thead tr th,
+  .doctor-details-item .doctor-name .degree {
+    font-size: 14px;
+  }
+  .pf-details .date ul li {
+    margin-right: 25px;
+    font-size: 13px;
+  }
+  .pf-details .body-text h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 30px;
+  }
+  .footer .single-footer h2 {
+    padding-bottom: 20px;
+  }
+  .footer .footer-top {
+    padding: 65px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header.sticky .header-bottom {
+    position: absolute;
+    z-index: 999;
+    top: initial;
+    left: 0;
+    bottom: initial;
+  }
+  .header .header-inner {
+    width: 100%;
+    z-index: 333;
+    position: relative;
+    padding-bottom: 20px;
+    background: #fff;
+  }
+  .slicknav_menu {
+    display: block;
+    background: 0 0;
+    padding: 0;
+  }
+  .slicknav_btn {
+    background: 0 0;
+    padding: 0;
+    margin-top: 28px;
+  }
+  .slicknav_nav {
+    clear: both;
+    color: #2c2d3f;
+    margin: 0;
+    font-size: 0.875em;
+    background: 0 0;
+  }
+  .slicknav_nav li a {
+    color: #2c2d3f;
+    transition: 0.4s;
+    background: 0 0;
+    padding: 4px 10px;
+  }
+  .slicknav_nav .slicknav_item a,
+  .slicknav_nav .slicknav_parent-link a {
+    padding: 0 10px;
+    background: 0 0;
+  }
+  .slicknav_nav li a i {
+    display: none;
+    margin: 0;
+  }
+  .slicknav_nav li .dropdown li a:hover,
+  .slicknav_nav li:hover .slicknav_arrow,
+  .slicknav_nav li:hover a {
+    color: #1a76d1;
+  }
+  .slicknav_nav li .dropdown li a {
+    color: #2c2d3f;
+    background: 0 0;
+  }
+  .slicknav_nav li .slicknav_item {
+    background: 0 0;
+  }
+  .slicknav_nav .slicknav_row,
+  .slicknav_nav a {
+    padding: 6px 0;
+    margin: 0;
+    font-weight: 400;
+  }
+  .header .top-link,
+  .section-title h2 {
+    margin-bottom: 10px;
+  }
+  .slicknav_menu .slicknav_icon-bar {
+    background-color: #1a76d1;
+    box-shadow: none;
+    text-shadow: none;
+    display: block;
+    width: 25px;
+    height: 3px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  }
+  .slicknav_nav .slicknav_arrow {
+    color: #2c2d3f;
+  }
+  .Feautes .single-features::before,
+  .header .main-menu,
+  .header.style2 .header-inner,
+  .header.style2 .main-menu,
+  .pf-details .image-slider .owl-nav {
+    display: none;
+  }
+  .header .widget-main {
+    float: right;
+    display: none;
+  }
+  .header .top-contact,
+  .header .top-link {
+    float: none;
+    text-align: center;
+  }
+  .header.style2 .slicknav_btn {
+    margin-top: 18px;
+  }
+  .header .slicknav_nav {
+    margin-top: 65px;
+  }
+  .header.style2 .slicknav_nav {
+    margin-top: 60px;
+  }
+  .header .header-inner .get-quote {
+    margin: 0;
+    padding: 0;
+  }
+  .header .header-inner .get-quote .btn {
+    color: #fff;
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  .section {
+    padding: 50px 0;
+  }
+  .section-title {
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+  .section-title h2 {
+    font-size: 22px;
+  }
+  .btn,
+  .section-title p {
+    font-size: 13px;
+  }
+  .breadcrumbs {
+    padding: 60px 0;
+  }
+  .breadcrumbs h2 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .breadcrumbs .bread-list {
+    margin-top: 10px;
+  }
+  .breadcrumbs ul li,
+  .breadcrumbs ul li a {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .btn {
+    padding: 11px 20px;
+    font-weight: 400;
+  }
+  .slider .single-slider {
+    height: 380px;
+    position: relative;
+  }
+  .schedule {
+    background: #fff;
+    margin: 0;
+    padding: 50px 0;
+    height: auto;
+    border-bottom: 1px solid #eee;
+  }
+  .schedule .schedule-inner {
+    transform: none;
+  }
+  .footer .single-footer,
+  .schedule .single-schedule {
+    margin: 15px 0;
+  }
+  .slider .single-slider:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    opacity: 0.5;
+  }
+  .slider .single-slider h1 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 35px;
+  }
+  .slider .single-slider .text,
+  .slider.index2 .single-slider .text {
+    margin-top: 80px;
+  }
+  .slider .owl-carousel .owl-nav div {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+  }
+  .Feautes.index2 {
+    padding-top: 50px;
+  }
+  .Feautes .single-features .signle-icon i {
+    font-size: 42px;
+    left: 50%;
+    margin-left: -40px;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+  }
+  .Feautes .single-features {
+    text-align: center;
+    position: relative;
+    padding: 0;
+    margin: 15px 0;
+  }
+  .Feautes .single-features h3 {
+    padding-top: 105px;
+    font-size: 20px;
+  }
+  .call-action .content,
+  .fun-facts.section {
+    padding: 70px 0;
+  }
+  .fun-facts .single-fun {
+    margin: 35px 0;
+    position: relative;
+    padding-top: 60px;
+    text-align: center;
+  }
+  .fun-facts .single-fun i {
+    left: 50%;
+    margin-left: -35px;
+    top: 0;
+    position: absolute;
+  }
+  .fun-facts .single-fun .content {
+    padding: 0;
+  }
+  .why-choose .choose-right {
+    height: 350px;
+    margin-top: 30px;
+  }
+  .call-action .content h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .about-image,
+  .contact-us #myMap,
+  .our-mission-image {
+    height: 300px;
+  }
+  .about-content h2 {
+    line-height: 32px;
+    font-size: 20px;
+  }
+  .about-content,
+  .our-mission-content {
+    width: 100%;
+    padding: 35px;
+  }
+  .our-mission-content h2 {
+    line-height: 32px;
+    font-size: 25px;
+  }
+  .contact-us .contact-us-form h2 {
+    font-size: 25px;
+  }
+  .contact-us .single-info {
+    margin: 10px 0;
+  }
+  .contact-us .contact-us-form {
+    padding: 30px;
+  }
+  .contact-us .form .btn {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+  }
+  .contact-us .form {
+    margin-top: -25px;
+  }
+  .pf-details .date ul li {
+    margin-right: 25px;
+    font-size: 13px;
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+  .pf-details .date ul li:last-child {
+    margin-bottom: 0;
+  }
+  .pf-details .body-text h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 30px;
+  }
+  .doctor-calendar-table table tbody tr td h3,
+  .doctor-calendar-table table tbody tr td span.time,
+  .doctor-calendar-table table thead tr th {
+    font-size: 14px;
+  }
+  .footer .single-footer h2 {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .footer .footer-top {
+    padding: 50px 0 60px;
+  }
+  .footer .single-footer.f-link ul {
+    margin-bottom: 12px;
+  }
+  .footer .single-footer.f-link ul li a {
+    display: inline-block;
+  }
+  .footer .copyright {
+    padding: 20px 0;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .header .top-link,
+  .section-title h2 {
+    margin-bottom: 10px;
+  }
+  .header .top-contact,
+  .header .top-link {
+    float: none;
+    text-align: center;
+  }
+  .section {
+    padding: 50px 0;
+  }
+  .section-title {
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+  .section-title h2 {
+    font-size: 22px;
+  }
+  .btn,
+  .section-title p,
+  .slider .single-slider p {
+    font-size: 13px;
+  }
+  .btn {
+    padding: 11px 20px;
+    font-weight: 400;
+  }
+  .slider .single-slider {
+    height: 380px;
+    position: relative;
+  }
+  .schedule {
+    background: #fff;
+    margin: 0;
+    padding: 50px 0;
+    height: auto;
+    border-bottom: 1px solid #eee;
+  }
+  .schedule .schedule-inner {
+    transform: none;
+  }
+  .blog .single-news,
+  .schedule .single-schedule {
+    margin: 15px 0;
+  }
+  .slider .single-slider:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    opacity: 0.5;
+  }
+  .slider .single-slider h1 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+  }
+  .slider .single-slider .text {
+    margin-top: 20px;
+  }
+  .slider .single-slider .button .btn {
+    margin: 0 0 10px;
+    width: 100%;
+  }
+  .slider .single-slider .button .btn:last-child {
+    margin-bottom: 0;
+  }
+  .Feautes .single-features::before,
+  .services-details-img blockquote i,
+  .slider .owl-carousel .owl-nav {
+    display: none;
+  }
+  .Feautes .single-features .signle-icon i {
+    font-size: 42px;
+    left: 50%;
+    margin-left: -40px;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+  }
+  .Feautes .single-features {
+    text-align: center;
+    position: relative;
+    padding: 0;
+    margin: 15px 0;
+  }
+  .Feautes .single-features h3 {
+    padding-top: 105px;
+    font-size: 20px;
+  }
+  .call-action .content,
+  .fun-facts.section {
+    padding: 70px 0;
+  }
+  .fun-facts .single-fun {
+    margin: 35px 0;
+    position: relative;
+    padding-top: 60px;
+    text-align: center;
+  }
+  .fun-facts .single-fun i {
+    left: 50%;
+    margin-left: -35px;
+    top: 0;
+    position: absolute;
+  }
+  .fun-facts .single-fun .content {
+    padding: 0;
+  }
+  .why-choose .choose-right {
+    height: 350px;
+    margin-top: 30px;
+  }
+  .call-action .content h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .footer .single-footer,
+  .services .single-service {
+    margin: 20px 0;
+  }
+  .departments .department-tab .tab-pane .department-left p,
+  .services .single-service h4 {
+    margin-bottom: 15px;
+  }
+  .appointment.single-page .appointment-inner,
+  .services-details-img blockquote {
+    padding: 25px;
+  }
+  .testimonials {
+    padding-bottom: 100px;
+  }
+  .testimonials .owl-dots {
+    transform: translateX(-18%);
+  }
+  .departments .department-tab .nav li {
+    margin: 0 10px;
+  }
+  .departments .department-tab .nav li a {
+    color: #fff;
+    margin-top: 10px;
+    padding: 0 3px 12px;
+  }
+  .departments .department-tab .nav li a i {
+    font-size: 38px;
+  }
+  .departments .department-tab .nav li .first {
+    padding-top: 6px;
+    font-size: 14px;
+  }
+  .departments .department-tab .nav li .second {
+    font-size: 13px;
+    font-weight: 400;
+    color: #868686;
+    margin-top: 0;
+  }
+  .departments .department-tab .tab-pane .department-left h3 {
+    font-size: 22px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+  .departments .department-tab .tab-pane .department-left .p1 {
+    margin-bottom: 12px;
+  }
+  .departments .department-right {
+    margin-top: 30px;
+  }
+  .departments .department-right img {
+    height: 100%;
+    width: 100%;
+  }
+  .newsletter .subscribe-text {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .newsletter .subscribe-form {
+    text-align: center;
+  }
+  .our-mission-content {
+    padding-top: 0;
+  }
+  .our-vision-area {
+    padding-bottom: 45px;
+  }
+  .our-mission-content ul li {
+    -ms-flex: 0 0 50%;
+    -webkit-box-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    margin: 5px 0;
+  }
+  .login .login-form,
+  .register .register-form {
+    padding: 30px;
+  }
+  .login .login-form h2,
+  .register .register-form h2 {
+    font-size: 26px;
+  }
+  .login .login-form .lost-pass {
+    margin-left: 0;
+    display: block;
+    margin-top: -10px;
+  }
+  .contact-us .form .btn,
+  .login .form .btn,
+  .register .form .btn {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+  }
+  .register .register-form .terms {
+    margin: -10px 0 0;
+    display: block;
+  }
+  .footer .single-footer h2 {
+    padding-bottom: 20px;
+  }
+  .footer .footer-top {
+    padding: 65px 0;
+  }
+}
+@media (min-width: 768px) {
+  .hero h1 {
+      font-size: 3rem;
+  }
+  .hero p {
+      font-size: 1.25rem;
+  }
+  .features h2,
+  .section-container h2,
+  .chatbot-content h2 {
+      font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero h1 {
+      font-size: 4rem;
+  }
+  .hero p {
+      font-size: 1.5rem;
+  }
+  .features h2,
+  .section-container h2,
+  .chatbot-content h2 {
+      font-size: 2.5rem;
+  }
+}
+
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+      padding: 4rem 1rem;
+      height: auto;
+  }
+  .hero-content {
+      padding: 1.5rem;
+  }
+}
+
+/* Responsive Feature Section */
+@media (max-width: 768px) {
+  .feature-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive Video Section */
+@media (max-width: 768px) {
+  .video-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive Chatbot Section */
+
+body{
+    overflow-x: hidden;
+}
+@media (max-width: 992px) {
+	.ai-section .container {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		gap: 30px;
+	}
+
+	.ai-section .container .sec-img img {
+		max-width: 300px;
+	}
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+	.ai-section .container {
+		grid-template-columns: 1fr;
+		gap: 20px;
+		padding: 10px;
+	}
+
+	.ai-section .container .ai-title p {
+		font-size: 14px;
+	}
+
+	.ai-section .container .ai-title p span {
+		font-size: 16px;
+	}
+
+	.ai-section .container .sec-img img {
+		max-width: 250px;
+	}
+}
+
+@media (max-width: 768px) {
+  .chat-container {
+      margin: 10px;
+      padding: 16px;
+  }
+
+  .chat-messages {
+      height: 300px;
+      padding: 16px 0;
+  }
+
+  .message-content {
+      max-width: 85%;
+      font-size: 14px;
+      padding: 10px 14px;
+  }
+
+  .chat-input {
+      flex-direction: column;
+      gap: 8px;
+      padding-top: 16px;
+  }
+
+  .chat-input input {
+      width: 100%;
+      font-size: 14px;
+  }
+
+  .send-button {
+      width: 100%;
+      justify-content: center;
+      font-size: 14px;
+  }
+
+  .chat-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+  }
+}

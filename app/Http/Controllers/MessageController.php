@@ -28,14 +28,14 @@ class MessageController extends Controller
         if (!$doctor || !$doctor->is_online){
             $patientmessage = Message::create([
                 'patient_id' => $request->user()->id,
-                'content' => $request->content,
-                'is_bot' => false
+                'content'    => $request->content,
+                'is_bot'     => false
             ]);
 
             $botmessage = Message::create([
                 'patient_id' => $request->user()->id,
-                'content' => 'الدكتور مش موجود دلوقت اؤمرني',
-                'is_bot' => true
+                'content'    => 'الدكتور مش موجود دلوقت اؤمرني',
+                'is_bot'     => true
             ]);
 
             return response()->json([

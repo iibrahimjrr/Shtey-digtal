@@ -1,0 +1,251 @@
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --primary-light: #60a5fa;
+    --text: #333;
+    --text-light: #666;
+    --background: #f0f9ff;
+    --white: #fff;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-400: #9ca3af;
+    --accent: #3b82f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--text);
+    background: var(--background);
+}
+
+.hero{
+    background: var(--primary);
+    color: var(--white);
+    padding: 8rem 1rem;
+    height: 100vh;
+    display: flex;
+}
+
+.hero-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 5%;
+}
+
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+
+.hero p{
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+
+
+
+/* Features Section */
+
+.features{
+    padding: 6rem 1rem;
+    background: var(--white);
+}
+
+.features h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.features span{
+    color: rgb(1, 1, 125);
+}
+
+.feature-grid{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.feature-card{
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.feature-card i{
+    color: var(--primary);
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3{
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p{
+    color: var(--text-light);
+}
+
+
+/* Video Section */
+.video-section {
+    padding: 6rem 1rem;
+    background: var(--primary);
+}
+
+.section-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.section-container h2 {
+    text-align: center;
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.section-description {
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 3rem;
+    font-size: 1.125rem;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.video-card {
+    background: var(--white);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.video-card:hover {
+    transform: translateY(-4px);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-content {
+    padding: 1.5rem;
+}
+
+.video-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.video-content p {
+    color: var(--text-light);
+    font-size: 0.875rem;
+}
+
+/* Chatbot Section */
+.chatbot-section {
+    padding: 4rem 0;
+    background-color: #ffffff;
+  }
+  
+  .section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .chatbot-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .chatbot-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .chatbot-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1e293b; /* Slate-800 */
+  }
+  
+  .section-description {
+    font-size: 1.1rem;
+    color: #475569; /* Slate-600 */
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .chatbot-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .chatbot-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #1e293b;
+    font-size: 1.5rem;
+  }
+  
+  .chatbot-features li svg {
+    color: #10b981; /* Emerald-500 */
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+  }
+  
+  .chatbot-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+

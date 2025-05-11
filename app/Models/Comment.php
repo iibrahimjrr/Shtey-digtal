@@ -4,15 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use App\Models\User;
+use App\Models\Patient;
 
 class Comment extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['comment', 'user_id'];
+    protected $fillable = ['comment', 'patient_id'];
 
-    public function users(){
-        return $this->belongsTo(User::class);
+    public function Patients(){
+        return $this->belongsTo(Patient::class);
     }
 }

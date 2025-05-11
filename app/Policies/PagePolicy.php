@@ -2,13 +2,13 @@
 
 namespace App\Policies;
 
-use App\Models\User;
+use App\Models\Patient;
 use App\Models\Page;
 
 class PagePolicy
 {
-    public function update(User $user, Page $page)
+    public function update(Patient $Patient, Page $page)
     {
-        return $user->is_admin;
+        return $Patient->is_admin;
     }
 }
